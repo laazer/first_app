@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-    
+    /** action occurs when send button is pressed **/
     public void sendMessage(View view){
         Intent intent = new Intent(this, DisplayMessageActivity.class);
         EditText editText = (EditText) findViewById(R.id.edit_message);
@@ -31,5 +31,12 @@ public class MainActivity extends Activity {
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
+    
+    /** action when flip button is pressed **/
+    public void flip(View view) {
+    Intent intent = new Intent(this, CoinFlip.class);
+    startActivity(intent);
+    }
+    
 
 }

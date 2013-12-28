@@ -10,5 +10,6 @@
     <string name="title_activity_coin_flip">CoinFlip</string>
     <string name="default_flip_num">0</string>
     <string name="flip_action">Flip</string>
+    <string name="flip">Flip</string>
 
 </resources>
