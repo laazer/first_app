@@ -9,7 +9,7 @@
     tools:context=".CoinFlip" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/flipVal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -22,9 +22,10 @@
         android:id="@+id/flipButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/flipVal"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
-        android:text="@string/flip_action" />
+        android:text="@string/flip_action" 
+        android:onClick="flip"/>
 
 </RelativeLayout>

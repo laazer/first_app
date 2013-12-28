@@ -10,20 +10,20 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/edit_text" />
-    
-     <Button 
+
+    <Button
         android:id="@+id/button_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/send_button" 
-        android:onClick="sendMessage"/>
+        android:onClick="sendMessage"
+        android:text="@string/send_button" />
 
-     <Button
-         android:id="@+id/flip"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:onClick="goFlip"
-         android:text="@string/flip" />
+    <Button
+        android:id="@+id/flip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goFlip"
+        android:text="@string/flip" />
 
 </LinearLayout>
 

@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
     }
     
     /** action when flip button is pressed **/
-    public void flip(View view) {
+    public void goFlip(View view) {
     Intent intent = new Intent(this, CoinFlip.class);
     startActivity(intent);
     }
