@@ -34,6 +34,10 @@
             android:name="com.example.myfirstapp.CoinFlip"
             android:label="@string/title_activity_coin_flip" >
         </activity>
+        <activity
+            android:name="com.example.myfirstapp.PickNumber"
+            android:label="@string/title_activity_pick_number" >
+        </activity>
     </application>
 
 </manifest>

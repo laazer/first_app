@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="17" />
 
     <application
@@ -33,6 +33,10 @@
         <activity
             android:name="com.example.myfirstapp.CoinFlip"
             android:label="@string/title_activity_coin_flip" >
+        </activity>
+        <activity
+            android:name="com.example.myfirstapp.PickNumber"
+            android:label="@string/title_activity_pick_number" >
         </activity>
     </application>
 

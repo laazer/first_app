@@ -38,5 +38,11 @@ public class MainActivity extends Activity {
     startActivity(intent);
     }
     
+    /** action when choose rand button is pressed **/
+    public void chooseRand(View view) {
+    Intent intent = new Intent(this, PickNumber.class);
+    startActivity(intent);
+    }
+    
 
 }

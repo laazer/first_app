@@ -11,5 +11,8 @@
     <string name="default_flip_num">0</string>
     <string name="flip_action">Flip</string>
     <string name="flip">Flip</string>
+    <string name="title_activity_pick_number">PickNumber</string>
+    <string name="pick_range">Pick a Range</string>
+    <string name="chooseNum">Rand Num</string>
 
 </resources>
