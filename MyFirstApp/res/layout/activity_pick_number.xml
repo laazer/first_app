@@ -19,18 +19,34 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Pick a Range"
+            android:text="@string/pickRange"
             android:textSize="25sp" />
+		
+        <LinearLayout
+        	android:id="@+id/linearLayout3"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="26dp"
+        	android:orientation="horizontal">
 
-        <NumberPicker
-            android:id="@+id/num_range"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:onClick="chooseRange" />
-
+            <EditText
+                android:id="@+id/num_range"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="10"
+                android:inputType="number" />
+            
+            <Button  
+                android:id="@+id/rangeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select" 
+                android:onClick="chooseRange"/>
+        
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -46,16 +62,29 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Pick a Number"
+            android:text="@string/pickNum"
             android:textSize="25sp" />
-        <NumberPicker
-            android:id="@+id/num_pick"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:onClick="guess"
-            />
-            
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <EditText
+                android:id="@+id/inputNum"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/guess"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:onClick="guess"
+                android:text="@string/guess" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -65,7 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/linearLayout2"
         android:layout_below="@+id/linearLayout2"
-        android:text="Room Temp"
+        android:text="@string/roomTmp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

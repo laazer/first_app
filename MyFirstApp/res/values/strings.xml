@@ -12,7 +12,12 @@
     <string name="flip_action">Flip</string>
     <string name="flip">Flip</string>
     <string name="title_activity_pick_number">PickNumber</string>
-    <string name="pick_range">Pick a Range</string>
+    <string name="pickRange">Pick a Range</string>
     <string name="chooseNum">Rand Num</string>
+    <string name="pickNum">Pick a Number</string>
+    <string name="guess">Guess</string>
+    <string name= "roomTmp" >Room Temp</string>
+    <string name="select">Select</string>
+    
 
 </resources>

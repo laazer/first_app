@@ -1,16 +1,19 @@
 package com.example.myfirstapp;
 
+import java.util.Random;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.graphics.Color;
 import android.view.Menu;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class PickNumber extends Activity {
 
-    private int range;
-    private int prev;
+    private int range = 10;
+    private int prev = range/2;
 
     static private String warm ="Warm";
     static private String warmer ="Warmer";
@@ -21,13 +24,7 @@ public class PickNumber extends Activity {
     static private String ice = "Ice Age";
     static private String correct = "Correct";
 
-    private String temp;
-
-    PickNumber() {
-        range = 10;
-        prev = range/2;
-        temp = room;
-    }
+    private String temp = room;
 
 
     @Override
@@ -45,17 +42,21 @@ public class PickNumber extends Activity {
 
     /** choose a range **/
     public void chooseRange(View view) {
-        this.range = R.id.range_select;
+        EditText r = (EditText) findViewById(R.id.num_range);
+        this.range = new Random().nextInt(Integer.parseInt(r.getText().toString()));
     }
-
+    
     public void guess(View view) {
-        int guess = R.id.num_pick;
+        EditText gText = (EditText) findViewById(R.id.inputNum);
+        Integer guess = Integer.parseInt(gText.getText().toString());
         this.setTemp(guess);
         TextView heat = (TextView) findViewById(R.id.heat);
         heat.setText(temp);
         this.setColor();
         prev = guess;
     }
+    
+    
 
     /** sets the this temp **/
     private void setTemp(int guess) {
